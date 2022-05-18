@@ -29,5 +29,15 @@ const getListCreated = async (req, res) => {
   }
 };
 
+const getListDelete = async (req, res) => {
+  try {
+    const {id } = req.body;
+    const task = await listServices.deleteOne(id);
+    res.status(200).json(task);
+  } catch (error) {
+    res.status(404).json({ message: 'Not Delete Task' });
+  }
+};
 
-module.exports = { getList, getListUpdate, getListCreated };
+
+module.exports = { getList, getListUpdate, getListCreated, getListDelete };

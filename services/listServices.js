@@ -14,10 +14,16 @@ const getOne = async (id, description, status, priority) => {
 };
 
 const createOne = async (description, status, priority) => {
-    const data = new Date();
-    const task = await List.createOne({ description, status, data, priority });
-    if (!task) return null;
-    return task;
-  };
+  const data = new Date();
+  const task = await List.createOne({ description, status, data, priority });
+  if (!task) return null;
+  return task;
+};
+  
+const deleteOne = async (id) => {
+  const task = await List.destroydestroy({ where: { id }});
+  if (!task) return null;
+  return task;
+};
 
-module.exports = { getAllList, getOne, createOne };
+module.exports = { getAllList, getOne, createOne, deleteOne };
