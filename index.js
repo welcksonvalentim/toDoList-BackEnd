@@ -7,8 +7,6 @@ const listControlleres = require('./controller/listControllers');
 
 const app = express();
 
-const { getList } = listControlleres;
-
 app.use((_req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   app.use(cors());
@@ -18,5 +16,6 @@ app.use((_req, res, next) => {
 const PORT = process.env.DB_PORT || 3000;
 
 app.get('/list', listControlleres.getList);
+app.post('/list', listControlleres.getListUpdate);
 
 app.listen(PORT, () => console.log(`Executando na porta: ${PORT}`));

@@ -6,4 +6,11 @@ const getAllList = async () => {
   return tasks;
 };
 
-module.exports = { getAllList };
+const getOne = async (id, description, status, priority) => {
+    const task = await List.findOne({ where: {id} });
+    const updatedTask = await task.update({ description, status, priority });
+    if (!updatedTask) return null;
+    return updatedTask;
+  };
+
+module.exports = { getAllList, getOne };
