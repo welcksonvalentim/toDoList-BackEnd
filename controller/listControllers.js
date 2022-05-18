@@ -19,4 +19,15 @@ const getListUpdate = async (req, res) => {
   }
 };
 
-module.exports = { getList, getListUpdate };
+const getListCreated = async (req, res) => {
+  try {
+    const {description, status, priority} = req.body;
+    const task = await listServices.createOne(description, status, priority);
+    res.status(200).json(task);
+  } catch (error) {
+    res.status(404).json({ message: 'Not Created Task' });
+  }
+};
+
+
+module.exports = { getList, getListUpdate, getListCreated };

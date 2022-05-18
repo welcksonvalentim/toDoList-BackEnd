@@ -16,6 +16,7 @@ app.use((_req, res, next) => {
 const PORT = process.env.DB_PORT || 3000;
 
 app.get('/list', listControlleres.getList);
-app.post('/list', listControlleres.getListUpdate);
+app.post('/list', listControlleres.getListCreated);
+app.patch('/list', listControlleres.getListUpdate);
 
 app.listen(PORT, () => console.log(`Executando na porta: ${PORT}`));
