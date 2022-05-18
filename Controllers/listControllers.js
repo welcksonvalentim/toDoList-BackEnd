@@ -1,8 +1,8 @@
-const { Task } = require('../models');
+const { List } = require('../Models');
 
 const getAllList = async (_req, res) => {
   try {
-    const tasks = await Task.findAll();
+    const tasks = await List.findAll();
     res.status(200).json(tasks);
   } catch (error) {
     res.status(404).json({ message: 'Not Fount List' });
