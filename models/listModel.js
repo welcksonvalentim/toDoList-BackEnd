@@ -4,6 +4,8 @@ const List = (sequelize, DataTypes) => {
     {
       description: DataTypes.STRING,
       status: DataTypes.STRING,
+      date: DataTypes.DATE,
+      type: DataTypes.STRING,
     },
     {
       sequelize,

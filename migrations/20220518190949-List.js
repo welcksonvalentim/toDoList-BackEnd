@@ -1,5 +1,3 @@
-use strict';
-
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('List', {
@@ -7,23 +5,27 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       descritpion: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       status: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+      },
+      date: {
+        allowNull: true,
+        type: Sequelize.STRING,
       },
       priority: {
         allowNull: true,
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
     });
   },
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface) {
     await queryInterface.dropTable('List');
-  }
+  },
 };
