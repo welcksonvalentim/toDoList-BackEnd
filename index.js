@@ -15,8 +15,8 @@ app.use((_req, res, next) => {
   next();
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.DB_PORT || 3000;
 
-app.get('/list', rescue(getList));
+app.get('/list', listControlleres.getList);
 
 app.listen(PORT, () => console.log(`Executando na porta: ${PORT}`));

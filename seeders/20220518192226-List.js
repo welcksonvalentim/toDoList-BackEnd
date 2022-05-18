@@ -3,25 +3,25 @@ module.exports = {
     'List',
     [
       {
-        descritpion: 'Estudar MongoDb',
+        description: 'Estudar MongoDb',
         status: 'Em andamento',
         date: new Date(),
         priority: 'Alta',
       },
       {
-        descritpion: 'Estudar Java',
+        description: 'Estudar Java',
         status: 'Em andamento',
         date: new Date(),
         priority: 'Muito Alta',
       },
       {
-        descritpion: 'Organizar guarda roupas',
+        description: 'Organizar guarda roupas',
         status: 'Pendente',
         date: new Date(),
         priority: 'Média',
       },
       {
-        descritpion: 'Organizar varanda',
+        description: 'Organizar varanda',
         status: 'Pendente',
         date: new Date(),
         priority: 'Baixa',
