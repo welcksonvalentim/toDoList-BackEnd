@@ -15,7 +15,7 @@ const getOne = async (id, description, status, priority) => {
 
 const createOne = async (description, status, priority) => {
   const data = new Date();
-  const task = await List.createOne({ description, status, data, priority });
+  const task = await List.create({description, status, data, priority});
   if (!task) return null;
   return task;
 };
