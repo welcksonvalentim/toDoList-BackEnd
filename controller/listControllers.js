@@ -43,5 +43,4 @@ const getListDelete = async (req, res) => {
   }
 };
 
-
 module.exports = { getList, getListUpdate, getListCreated, getListDelete };
