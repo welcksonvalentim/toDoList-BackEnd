@@ -5,7 +5,7 @@ Este projeto cria API e endpoints para manipulação de dados e renderização a
 ## Funcionalidades da aplicação
 
 Cria banco de dados List, com informações sobre tarefas, status e prioridade.
-Desenvolvida para interagir com o banco de dados MySQL, retornando API com todos os dados armazenados na tabela List ao realizar consulta (GET) a rota /list.
+Desenvolvida para interagir com o banco de dados MySQL, armazenado remotamente na plataforma supabase,retornando API com todos os dados armazenados na tabela List ao realizar consulta (GET) a rota /list.
 Arquitetura do back end sobre estrutura de camadas, sendo a camada se controller, service e models funcionais e aplicadas.
 
 ### Tecnologias utilizadas
