@@ -15,8 +15,15 @@ A aplicação esta desenvolvimento, criando `CRUD` (Create, Read, Update and Del
 
 ### Acesso ao Deploy completo do projeto
 
+Realizado deploy da aplicação na plataforma Surge e disponível em:
+* https://welckson_todo.surge.sh/
+
 Realizado deploy da aplicação Back End na plataforma Heroku e disponível em:
 * https://to-do-list-welckson.herokuapp.com/list
+
+Aplicação Front End disponível no repositório:
+* https://github.com/welcksonvalentim/toDoList-FrontEnd
+
 
 ## Para rodar a aplicação localmente
 

@@ -15,4 +15,5 @@ const List = (sequelize, DataTypes) => {
   })
   return List
 }
+
 module.exports = List;

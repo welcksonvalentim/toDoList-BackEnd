@@ -34,7 +34,7 @@ const getListCreated = async (req, res) => {
 
 const getListDelete = async (req, res) => {
   try {
-    const {id } = req.body;
+    const { id } = req.body;
     const task = await listServices.deleteOne(id);
     res.status(200).json(task);
   } catch (error) {
