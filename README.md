@@ -24,7 +24,7 @@ Realizado deploy da aplicação Back End na plataforma Heroku e disponível em:
 * `git@github.com:welcksonvalentim/toDoList-BackEnd.git`
 
 2. Entre na pasta do repositório que você acabou de clonar:
-* `cd listOfCarsBackEnd`
+* `cd toDoList-BackEnd`
 
 3. Instale as dependências e inicialize o projeto:
 * `npm install`
