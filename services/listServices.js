@@ -21,7 +21,7 @@ const createOne = async (description, status, priority) => {
 };
   
 const deleteOne = async (id) => {
-  const task = await List.destroydestroy({ where: { id }});
+  const task = await List.destroy({ where: { id }});
   if (!task) return null;
   return task;
 };
