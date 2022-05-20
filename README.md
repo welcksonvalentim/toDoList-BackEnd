@@ -15,8 +15,8 @@ A aplicação esta desenvolvimento, criando `CRUD` (Create, Read, Update and Del
 
 ### Acesso ao Deploy completo do projeto
 
-Realizado deploy da aplicação Front End na plataforma Heroku e disponível em:
-* https://listofcarsfrontend.herokuapp.com/cars
+Realizado deploy da aplicação Back End na plataforma Heroku e disponível em:
+* https://to-do-list-welckson.herokuapp.com/list
 
 ## Para rodar a aplicação localmente
 
@@ -34,3 +34,9 @@ Realizado deploy da aplicação Front End na plataforma Heroku e disponível em:
 
 4. Utilize simuladores de requisição (exemplo: Insomnia):
 * Faça requisição do tipo `GET` para: `http://localhost:3005/list`
+
+
+### Próximos Passos do Projeto
+
+* Desenvolver testes unitários;
+
